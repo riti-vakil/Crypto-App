@@ -1,7 +1,7 @@
 import React from 'react';
 import {Switch,Route,Routes,Link} from 'react-router-dom';
 import {Layout,Typography,Space } from 'antd';
-import {Navbar,Exchanges,Homepage,Cryptodetails,Cryptocurrencies,News} from './components'
+import {Navbar,Homepage,Cryptodetails,Cryptocurrencies,News} from './components'
 import './App.css'
 
 
@@ -16,7 +16,6 @@ const App = () => {
               <div className="routes">
                 <Routes>
                 <Route path="/" element={<Homepage/>}/>
-                <Route path="exchanges/*" element={<Exchanges/>}/>
                 <Route path="cryptocurrencies/*" element={<Cryptocurrencies/>}/>
                 <Route path="crypto/:coinId/*" element={<Cryptodetails/>}/>
                 <Route path="news/*" element={<News/>}/>
